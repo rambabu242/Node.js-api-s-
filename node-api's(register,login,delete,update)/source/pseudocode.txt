@@ -1,0 +1,21 @@
+pseudo code for registration page
+
+// prepare an object with the input params
+   let userDetails = [{
+   firstname:"",
+   .
+   .
+   .
+   }]
+// create a function for register a user 
+// app.post("/register".(req, res)=>{
+
+})
+// create a variable user and get the input params from body
+// provide input params
+// expected params firstname,lastname,email,phonenumber
+// push the user in userDetails
+// send response
+ res.json({
+        message: "registraion success"
+    })

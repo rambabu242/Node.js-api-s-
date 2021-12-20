@@ -1,0 +1,10 @@
+version: "3"
+services:
+  testdb:
+    image: postgis/postgis
+    environment:
+      - POSTGRES_USER=ram
+      - POSTGRES_PASSWORD=Passw0rd
+      - POSTGRES_DB=ram_nodeapi
+    ports:
+      - 4000:5432
