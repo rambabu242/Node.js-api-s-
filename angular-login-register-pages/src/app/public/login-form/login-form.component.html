@@ -1,0 +1,44 @@
+<div id="content">
+    <h3>Login</h3>
+</div>
+<div class="divclass">
+    <form name ="form" #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+        <div class="main">
+            <div class="divcontent">
+                <!-- for email -->
+                <label for="email"><b>Email:</b></label>
+                <input 
+                id="email"
+                type="text" 
+                class="input" 
+                placeholder="Enter Email"
+                ngModel 
+                name="email" 
+                required
+                email
+                #email="ngModel">
+                
+                <div *ngIf="!email.valid && (email.dirty || email.touched)" class="alert"> Please enter valid email</div>
+                <!-- for password -->
+                <label for="password"><b>Password:</b></label>
+                <input 
+                id="password"
+                type="password"
+                class="input" 
+                placeholder="Enter Password"
+                ngModel 
+                name="password"   
+                required
+                #password="ngModel">
+                
+                <div *ngIf="!password.valid && (password.dirty || password.touched)" class="alert"> Please enter Password</div>
+              
+            </div>
+            <!-- for login button -->
+            <div class="div_login">
+                <button id="login" type="submit" [disabled]="!loginForm.valid"><b>Login</b></button>
+            </div>
+            <div id="text">Don't have an account?<a href="signup">Sign up here</a></div>
+        </div>
+    </form>
+</div>

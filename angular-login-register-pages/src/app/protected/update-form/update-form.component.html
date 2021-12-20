@@ -1,0 +1,33 @@
+<div class="main-continer">
+    <div id="content">
+        <h2>User data</h2>
+    </div>
+    <div class="divclass">
+        <form name="form" #updateForm="ngForm" (ngSubmit)="onSubmit(updateForm)">
+            <div>
+                <label for="firstName"><b> FirstName: </b></label>
+                <input id="first_name" type="text" class="input" [(ngModel)]='userInfo.firstName' name="firstName"
+                    #firstName="ngModel">
+            </div>
+            <div>
+                <label for="lastName"><b> LastName: </b></label>
+                <input id="last_name" type="text" class="input" [(ngModel)]="userInfo.lastName" name="lastName"
+                   #lastName="ngModel">
+            </div>
+            <div>
+                <label for="phoneNumber"><b> PhoneNumber: </b></label>
+                <input id="phone_number" type="text" class="input" [(ngModel)]="userInfo.phoneNumber"
+                    name="phoneNumber" #phoneNumber="ngModel">
+            </div>
+            <div>
+                <label for="email"><b> Email: </b></label>
+                <input id="email" type="email" class="input" [(ngModel)]="userInfo.email"
+                    name="email" #email="ngModel">
+            </div>
+            <!-- div block for login button -->
+            <div class="update">
+                <button id="updateForm" type="submit"><b>update</b></button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,71 @@
+#content {
+    text-align: center;
+    font-size: 22px;
+    padding: 10px;
+    font-family: sans-serif;
+}
+.divclass {
+    height: calc(100vh - 235px);
+}
+/* for form */
+.main {
+    width: 470px;
+    margin: auto;
+    height: 280px;
+    border: 2px solid #f2f2f2;
+    box-sizing: border-box;   
+}
+/* for label in form */
+.main label {
+    display: inline-block;
+    width: 80px;
+    padding: 30px;
+    font-family: sans-serif;
+}
+.divcontent {
+    height: 170px;
+    margin: 18px;
+}
+.input {
+    width: 200px;
+    padding: 13px;
+    border-radius: 12px;
+    border: 2px solid #cccccc;
+}
+#error {
+    color: red;
+    display: none;
+    text-align: center;
+}
+/* for login button */
+.div_login {
+    text-align: center;
+}
+#login {
+    width: 25%;
+    background-color: #d83b1f;
+    color: #fbeeeb;
+    padding: 14px;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    margin-top: 10px; 
+}
+#text {
+    text-align: center;
+    color: #939393;
+    font-size: 22px;
+    margin-top: 30px;
+}
+/* anchor tag */
+a {
+    color: #541b88;
+    text-decoration: underline;
+}
+.alert {
+    color: red;
+    text-align: center;
+}
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+}

@@ -1,0 +1,49 @@
+<div>
+    <!-- header -->
+    <div class="main-container">
+    <div id="content"><h2>Signup</h2></div>
+    <!-- form -->
+    <form class="grid-container" [formGroup]="signupForm" (ngSubmit)="onSubmit(signupForm)">
+        <!-- for first name -->
+        <div>
+            <label for="firstName" class="label"><b> First Name:</b> </label>
+            <input id="firstName" type="text" formControlName="firstName" class="input" placeholder="    Enter First Name">
+            <div *ngIf="!signupForm.controls.firstName.valid && signupForm.controls.firstName.touched" class="alert"> Please enter firstname!</div>
+        </div>
+        
+        <!-- <div *ngIf="signupForm.controls.errors" class="alert">Please enter firstName!</div> -->
+        <!-- for last name -->
+        <div>
+            <label for="lastName" class="label"><b> Last Name:</b> </label>
+            <input id="lastName" type="text" formControlName="lastName" class="input" placeholder="   Enter Last Name">
+            <div *ngIf="!signupForm.controls.lastName.valid && signupForm.controls.lastName.touched" class="alert"> Please enter lastname!</div>
+        </div>
+       
+        <!-- for phone  -->
+        <div>
+            <label for="phoneNumber" class="label"><b> Phone:</b> </label>
+            <input id="phoneNumber" type="number" formControlName="phoneNumber" class="input" placeholder="  Enter Phone ">
+            <div *ngIf="!signupForm.controls.phoneNumber.valid && signupForm.controls.phoneNumber.touched" class="alert"> Please enter phonenumber!</div>
+        </div>
+        
+        <!-- for email -->
+        <div>
+            <label for="email" class="label"><b> Email:</b></label>
+            <input id="email" type="email" formControlName="email" class="input" placeholder="  Enter Email">
+            <div *ngIf="!signupForm.controls.email.valid && signupForm.controls.email.touched" class="alert"> Please enter valid email!</div>
+        </div>
+       
+        <!-- for password -->
+        <div>
+            <label for="password" class="label"><b> Password: </b></label>
+            <input id="password" type="password" formControlName="password" class="input" placeholder="   Enter Password">
+            <div *ngIf="!signupForm.controls.password.valid && signupForm.controls.password.touched" class="alert"> Please enter password!</div>
+        </div>
+       
+        <!-- for signup button -->
+        <div class="div">
+            <button class = "button" type="submit" [disabled]="!signupForm.valid">Signup</button>
+             <button class = "button" routerLink="/login">Cancel</button>
+        </div>
+    </form>
+</div>

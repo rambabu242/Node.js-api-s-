@@ -1,0 +1,21 @@
+.header {
+    background-color: hsl(330deg 2% 18%);
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    padding: 45px;
+}
+.navbar {
+    background-color: hsl(330deg 1% 60%);
+    text-align: left;
+    color: white;
+    font-size: 32px;
+    padding: 12px 0px 12px 20px;   
+}
+.footer {
+    background-color: hsl(0deg 0% 33%);
+    text-align: center;
+    color: white;
+    padding: 30px 0px 30px 0px;
+    font-size: 60px;
+}

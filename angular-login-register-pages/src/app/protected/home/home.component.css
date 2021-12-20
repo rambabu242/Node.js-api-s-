@@ -1,0 +1,32 @@
+/* styling nav bar */
+
+/* styling main content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+/* common class of both content and sidebar */
+.main {
+    text-align: center;
+    color: black;
+    font-size: 60px;
+    height: 612px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* main content block */
+#content {
+    background-color: hsl(0deg 0% 87%); 
+    width: 70%;
+    margin-right: 30px;
+    float: left; 
+}
+/* side bar */
+#sidebar {
+    background-color: hsl(330deg 1% 73%);
+    width: 30%; 
+    float: right;
+}
